@@ -21,13 +21,13 @@
 #include <miniupnpc/upnperrors.h>
 #endif
 
-// Dump addresses to peers.dat every 5 minutes (300s)
-#define DUMP_ADDRESSES_INTERVAL 300
+// Dump addresses to peers.dat every 2.5 minutes (150s)
+#define DUMP_ADDRESSES_INTERVAL 150
 
 using namespace std;
 using namespace boost;
 
-static const int MAX_OUTBOUND_CONNECTIONS = 32;
+static const int MAX_OUTBOUND_CONNECTIONS = 48;
 
 bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOutbound = NULL, const char *strDest = NULL, bool fOneShot = false);
 
